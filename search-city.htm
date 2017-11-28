@@ -1,0 +1,7 @@
+<div class="container-weather col-md-12" ng-controller="searchCitites">
+	<div class="home-banner"><h1>Search Result <span ng-bind="searchFor"></span></h1></div>
+	<weather ng-repeat="weather in weathers" class="col-md-2 weather">
+
+	</weather>
+	<div  ng-bind="noResult" class="col-md-8 col-md-offset-2 resultDisplay"></div>
+</div>

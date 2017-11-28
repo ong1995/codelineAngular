@@ -1,0 +1,15 @@
+<a href="#/weather/{{weather['woeid']}}">
+	<div class="weather-details">
+		<label class="day" ng-bind="applicableDate"></label>
+		<center><h2>{{weather['title']}}</h2></center>
+		<center><img ng-src="{{weatherIcon}}"></center>
+		<fieldset>
+			<legend>Weather Details</legend>
+			Weather State: <span ng-bind="weatherName" class="weather-name"></span><br>
+			Temperature : <span ng-bind="theTemp"></span> &#x2103;<br>
+			Minimum Temperature : <span ng-bind="minTemp"></span> &#x2103;<br>
+			Maximum Temperature : <span ng-bind="maxTemp"> &#x2103;</span>
+		</fieldset>
+	</div>
+</a>	
+
